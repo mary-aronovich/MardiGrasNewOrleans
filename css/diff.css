@@ -1,0 +1,26 @@
+.container {}
+
+
+#hamburger_menu {
+    display: inline-block;
+    float: right;
+    opacity: 1;
+    margin-top: 15px;
+    z-index: 1200;
+    width: 27px;
+    height: 25px;
+    cursor: pointer;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
