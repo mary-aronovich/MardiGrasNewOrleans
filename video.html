@@ -2,82 +2,127 @@
 <html lang="en">
 
 <head>
+    <title>photos</title>
+    <meta name="Mardi Gras" content="Everything about Mardi Gras" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+
     <link href="https://fonts.googleapis.com/css?family=Henny+Penny|Pattaya|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="diff.css">
-    <link rel="stylesheet" href="navbarStyle.css">
-    <script src="script/jquery-1.11.2.min.js"></script>
-
-    <title>Video</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
-        .photos {}
+        h1 {
+            font-family: 'Henny Penny';
+            font-size: 6em;
+        }
+
+        .myNav,
+        .search {
+            font-family: 'Pattaya';
+            font-size: 1.4em;
+            display: block;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .logo2019 {
+            width: 350px;
+            height: 350px;
+            border: 4px bobels #8cbf3f;
+            margin: right;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+        .logo2019:hover {
+            transform: scale(1.1)
+        }
+
+        form fieldset div.formfields {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            height: 100%;
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 
 <body>
-    <br><br>
-    <header>
-        <div class="head">
-            <a class="logo" itemprop="url" href="/"><img src="images/baner.jpg" width="100%" height="100%"
-                    alt="Mardi Gras New Orleans Logo" /></a>
-            <form class="search" method="GET" action="/search" novalidate>
-                <input type="search" name="q" value="" required placeholder="search"><button>Search <i
-                        class="fas search"></i></button>
-            </form>
-        </div>
-    </header>
-    <h1>video</h1>
-    <b>
-        <nav class="bigNav">
-            <ul>
-                <li><a href="home.html">Home</a></li>&nbsp;&nbsp;
-                <li><a href="about.html">Information</a></li>&nbsp;&nbsp;
-                <li><a href="/">Media</a>
-                    <ul>
-                        <li><a href="photos.html">Photos</li>
-                        <li><a href="video.html">Video</a></li>
-                    </ul>
-                </li>&nbsp;&nbsp;
-                <li><a href="/">FAQ</a>
-                    <ul>
-                        <li><a href="history.html">History FAQ's</li>
-                        <li><a href="mardiGras.html">Mardi Gras FAQ's</a></li>
-                    </ul>
-                </li>&nbsp;&nbsp;
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="trivia.html">Trivia</a></li>
-            </ul>
-        </nav>
-        <div class="hamburger">&#9776;</div>
-        <nav class="smallNav">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">Information</a></li>
-                <li><a href="media.html">Media</a></li>
-                <li><a href="faqs.html">FAQ</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="trivia.html">Trivia</a></li>
-            </ul>
-        </nav>
+    <div id="mySite">
+        <header class="container">
+            <div id="menu">
 
-        <li>
+                <div id="logo" href="index.html"><img src="images/baner.jpg" width="100%" height="100%"
+                        alt="Mardi Gras New Orleans Logo">
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/DVKl-QEEL3w" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <span>Mardi Gras Easy Chairs</span>
-        </li>
+                    <div class="myNav">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarColor03">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="index.html">Home <span
+                                                class="sr-only"></span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About Mardi Gras</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                                            role="button" aria-haspopup="true" aria-expanded="false">Media</a>
+                                        <div class="dropdown-menu" font-family="Pattaya">
+                                            <a class="dropdown-item" href="photos.html">Photos</a>
+                                            <a class="dropdown-item" href="video.html">Video</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="faqs.html">FAQ's</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="trivia.html">Trivia</a>
+                                    </li>
+                                </ul>
+                                <div class="search">
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                                        <button class="btn btn-dark my-2 my-sm-0 " type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </nav>
+                    </div><br>
+                    <header id="main">
+                        <h1>Video</h1>
+                    </header>
+
+                    <li>
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DVKl-QEEL3w" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <span>Mardi Gras Easy Chairs</span>
+                    </li>
 </body>
 
 </html>

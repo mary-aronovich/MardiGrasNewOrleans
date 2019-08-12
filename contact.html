@@ -2,24 +2,54 @@
 <html lang="en">
 
 <head>
+    <title>Contact</title>
+    <meta name="Mardi Gras" content="Everything about Mardi Gras" />
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+
     <link href="https://fonts.googleapis.com/css?family=Henny+Penny|Pattaya|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="navbarStyle.css">
-    <link rel="stylesheet" href="diff.css">
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
+        h1 {
+            font-family: 'Henny Penny';
+            font-size: 6em;
+        }
+
+        .myNav,
+        .search {
+            font-family: 'Pattaya';
+            font-size: 1.4em;
+            display: block;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .logo2019 {
+            width: 350px;
+            height: 350px;
+            border: 4px bobels #8cbf3f;
+            margin: right;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+        .logo2019:hover {
+            transform: scale(1.1)
+        }
+
         form fieldset div.formfields {
             display: flex;
             flex-wrap: wrap;
@@ -31,104 +61,94 @@
 </head>
 
 <body>
-    <div id="page">
+    <div id="mySite">
         <header class="container">
             <div id="menu">
                 <div id="logo">
-                    <a href='.'>Mardi Gras New Orleans</a>
+                    <a href='index.html'>Mardi Gras New Orleans</a>
                 </div>
-
-
-                <div id="logo" href="."><img src="images/baner.jpg" width="100%" height="100%"
+                <div id="logo" href="index.html"><img src="images/baner.jpg" width="100%" height="100%"
                         alt="Mardi Gras New Orleans Logo">
-                    <h2>Mardi Gras New Orleans</h2>
-                    <nav class="navbar navbar-expand-lg navbar-light bg-active">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
-                            aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
 
-                        <div class="collapse navbar-collapse" id="navbarColor03">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                    <button type="button" class="btn btn-outline-purple">
-                                        <a class="nav-link" href="home.html">Home <span
-                                                class="sr-only"></span></a></button>
-                                </li>
-                                <li class="nav-item">
-                                    <button type="button" class="btn btn-outline-warning">
+                    <div class="myNav">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarColor03">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="index.html">Home <span
+                                                class="sr-only"></span></a>
+                                    </li>
+                                    <li class="nav-item">
                                         <a class="nav-link" href="about.html">Infornation</a>
-                                </li>
-                                <li class="nav-item">
-                                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                        <button type="button" class="btn btn-outline-dark">Media</button>
-                                        <div class="btn-group" role="group">
-                                            <button id="btnGroupDrop2" type="button"
-                                                class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
-                                                aria-haspopup="true" aria-expanded="false"></button>
-                                            <div class="dropdown-menu " aria-labelledby="btnGroupDrop2"
-                                                x-placement="bottom-start"
-                                                style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
-                                                <a class="dropdown-item" href="photos.html">Photos</a>
-                                                <a class="dropdown-item" href="video.html">Video</a>
-                                            </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                                            role="button" aria-haspopup="true" aria-expanded="false">Media</a>
+                                        <div class="dropdown-menu" font-family="Pattaya">
+                                            <a class="dropdown-item" href="photos.html">Photos</a>
+                                            <a class="dropdown-item" href="video.html">Video</a>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <button type="button" class="btn btn-outline-success">
-                                        <a class="nav-link" href="faqs.html">FAQ's</a></button>
-                                </li>
-                                <li class="nav-item">
-                                    <button type="button" class="btn btn-outline-info">
-                                        <a class="nav-link" href="contact.html">Contact Us</a></button>
-                                </li>
-                                <li class="nav-item">
-                                    <button type="button" class="btn btn-outline-primary">
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="faqs.html">FAQ's</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact Us</a>
+                                    </li>
+                                    <li class="nav-item">
                                         <a class="nav-link" href="trivia.html">Trivia</a>
-                                </li>
-                            </ul>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </nav>
-                    <br><br><br>
-                    <section id="main" class="col-md-8 col-sm-9">
-
-                    </section>
-                    <form method="post" action="/contact/thank-you">
-                        <legend></legend>
-                        <div class="formfields">
-                            <div class="third">
-                                <input type="text" name="Name" required="" placeholder="Name" aria-label="Name"
-                                    autocomplete="name" style="border-bottom: 3px solid #9453a6;">
-                            </div><br>
-                            <div class="third">
-                                <input type="text" name="Last name" placeholder="Last name" aria-label="Last name"
-                                    autocomplete="last" style="border-bottom: 3px solid #8cbf3f;">
-                            </div><br>
-                            <div class="third">
-                                <input type="email" name="Email" required="" placeholder="Email" aria-label="Email"
-                                    autocomplete="email" style="border-bottom: 3px solid #f2cc0f;">
-                            </div><br>
-                            <div class="vpad">
-                                <textarea name="Textarea" rows="4" placeholder="Textarea" required=""
-                                    aria-label="Textarea"></textarea>
+                                    </li>
+                                </ul>
+                                <div class="search">
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                                        <button class="btn btn-dark my-2 my-sm-0 " type="submit">Search</button>
+                                    </form>
+                                </div>
                             </div>
+                        </nav>
+                    </div>
+                    <header id="main">
+                        <h1>Mardi Gras New Orleans</h1>
+                    </header>
+                    <section id="main">
+                        <form method="post" action="/contact/thank-you">
+                            <legend></legend>
+                            <div class="formfields">
+                                <div class="third">
+                                    <input type="text" name="Name" required="" placeholder="Name" aria-label="Name"
+                                        autocomplete="name" style="border-bottom: 3px solid #9453a6;">
+                                </div><br>
+                                <div class="third">
+                                    <input type="text" name="Last name" placeholder="Last name" aria-label="Last name"
+                                        autocomplete="last" style="border-bottom: 3px solid #8cbf3f;">
+                                </div><br>
+                                <div class="third">
+                                    <input type="email" name="Email" required="" placeholder="Email" aria-label="Email"
+                                        autocomplete="email" style="border-bottom: 3px solid #f2cc0f;">
+                                </div><br>
+                                <div class="vpad">
+                                    <textarea name="Textarea" rows="4" placeholder="Textarea" required=""
+                                        aria-label="Textarea"></textarea>
+                                </div>
 
-                            <div class="third"></div>
-                            <div class="third"></div>
-                            <div class="third">
-                                <input type="hidden" name="module" value="Core::send_email_form">
-                                <input type="hidden" name="g-recaptcha-response" value="">
-                                <button>Send </button>
+                                <div class="third"></div>
+                                <div class="third"></div>
+                                <div class="third">
+                                    <input type="hidden" name="module" value="Core::send_email_form">
+                                    <input type="hidden" name="g-recaptcha-response" value="">
+                                    <button>Send </button>
+                                </div>
                             </div>
-                        </div>
-                        </fieldset>
-                    </form>
-                    </b>
+                            </fieldset>
+                        </form>
+                        </b>
 </body>
 
 </html>
