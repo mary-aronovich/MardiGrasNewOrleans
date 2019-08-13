@@ -1,0 +1,73 @@
+.purple {
+    color: #9453A6;
+}
+
+.green {
+    color: #8cbf3f;
+}
+
+.yellow {
+    color: #f2cc0f;
+}
+
+.black {
+    color: #0d0d0d;
+}
+
+.light {
+    background-color: #f2f2f2;
+}
+
+h1 {
+    font-family: 'Henny Penny';
+    font-size: 5em;
+}
+
+h2 {
+    font-family: 'Pattaya';
+    font-size: 2em;
+}
+
+.myNav,
+.search {
+    font-family: 'Pattaya';
+    font-size: 1.4em;
+    display: block;
+}
+
+
+p {
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+.logo2019 {
+    width: 350px;
+    height: 350px;
+    border: 4px bobels #8cbf3f;
+    margin: right;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.logo2019:hover {
+    transform: scale(1.1)
+}
+
+form fieldset div.formfields {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+.qu {
+    font-family: 'Roboto';
+    font-size: 1.3em;
+}
+
+.an {
+    font-family: 'Roboto';
+    font-size: 0.8em;
+}

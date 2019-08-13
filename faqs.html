@@ -20,51 +20,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-        .myColor {
-            color: #9453A6;
-        }
-
-        h1 {
-            font-family: 'Henny Penny';
-            font-size: 5em;
-        }
-
-        .dropdown-item,
-        .myNav,
-        .search {
-            font-family: 'Pattaya';
-            font-size: 1.4em;
-            display: block;
-        }
-
-        h2 {
-            font-family: 'Pattaya';
-        }
-
-        .logo2019 {
-            width: 350px;
-            height: 350px;
-            border: 4px bobels #8cbf3f;
-            margin: right;
-            box-sizing: border-box;
-            overflow: auto;
-        }
-
-        .logo2019:hover {
-            transform: scale(1.1)
-        }
-
-        .qu {
-            font-family: 'Roboto';
-            font-size: 1.3em;
-        }
-
-        .an {
-            font-family: 'Roboto';
-            font-size: 0.8em;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -74,7 +30,7 @@
                 alt="Mardi Gras New Orleans Logo">
 
             <div class="myNav">
-                <nav class="navbar navbar-expand-lg navbar-light bg-warning mb-5">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
                         aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -83,27 +39,27 @@
                     <div class="collapse navbar-collapse" id="navbarColor03">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Home <span class="sr-only"></span></a>
+                                <a class="nav-link active" href="index.html" style="color: #0d0d0d">Home <span
+                                        class="sr-only"></span></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About Mardi Gras</a>
+                            <a class="nav-link" href="about.html" style="color: #8cbf3f">About Mardi Gras</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Media</a>
-                                <div class="dropdown-menu">
+                                    aria-haspopup="true" aria-expanded="false" style="color: #9453A6">Media</a>
+                                <div class="dropdown-menu" font-family="Pattaya">
                                     <a class="dropdown-item" href="photos.html">Photos</a>
                                     <a class="dropdown-item" href="video.html">Video</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="faqs.html">FAQ's</a>
+                                <a class="nav-link" href="faqs.html" style="color:#f2cc0f">FAQ's</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact Us</a>
+                                <a class="nav-link" href="contact.html" style="color:#0d0d0d">Contact Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="trivia.html">Trivia</a>
+                                <a class="nav-link" href="trivia.html" style="color: #8cbf3f">Trivia</a>
                             </li>
                         </ul>
                         <div class="search">
@@ -127,7 +83,7 @@
                 frequently asked questions about Mardi Gras. Still have questions? Contact us and we'll be sure to
                 answer you as soon as possible.</h2>
             <div class="faqs mb-3">
-                <div class="qu mb-3 text-success">
+                <div class="qu mb-3 green">
                     Is there an "official" Mardi Gras?
                     <div class="an">No! Mardi Gras is a holiday, just like Christmas and Easter. It belongs to everyone.
                         Do not believe the claims of businesses who offer "official" Mardi Gras merchandise or an
@@ -137,14 +93,14 @@
                         merchandise. In some parts of the country, official organizations control their Mardi Gras
                         celebration, but this is not true in New Orleans.</div>
                 </div>
-                <div class="qu mb-3 text-warning">
+                <div class="qu mb-3 yellow">
                     When does Mardi Gras start and end?
                     <div class="an">
                         Carnival season always begins on Jan. 6, which is King’s Day (Feast of the Epiphany).<br> Mardi
                         Gras day (Fat Tuesday), however, is on a different day each year.
                     </div>
                 </div>
-                <div class="qu mb-3 text-secondary">
+                <div class="qu mb-3 black">
                     Can I bring my kids to Mardi Gras?
                     <div class="an">By all means, yes! Contrary to public perception, Mardi Gras is a family
                         celebration. Those of us who grew up in New Orleans feel guilty once our children have grown up
@@ -164,7 +120,7 @@
                         before Mardi Gras weekend, is the parade Disneyworld features on Mardi Gras day. Kids love it!
                     </div>
                 </div>
-                <div class="qu mb-3 myColor">
+                <div class="qu mb-3 purple">
                     I only have limited time. What is the prime time to visit during Mardi Gras?
                     <div class="an">The weekend before Fat Tuesday is the prime time to visit New Orleans for Mardi
                         Gras. This is the weekend when Bacchus and Endymion, two of the biggest parades of the season,
@@ -198,7 +154,7 @@
                         weekend between French Quarter Festival and Jazz Fest. No specific details are available on
                         these events at this time.</div>
                 </div>
-                <div class="qu mb-3 text-warning">
+                <div class="qu mb-3 yellow">
                     How can I find out what this year's Mardi Gras theme will be?
                     <div class="an">There is not a single official Mardi Gras theme since there is no single
                         organization in charge of Mardi Gras. Each parade krewe decides on its own theme each year,
@@ -209,7 +165,7 @@
                         Most of the krewes are named after figures from Greek, Roman, and Egyptian mythology, but some
                         are named after the neighborhood where they parade.</div>
                 </div>
-                <div class="qu mb-3 text-success">
+                <div class="qu mb-3 green">
                     What is the weather usually like during Mardi Gras? What should I pack?
                     <div class="an">The weather during Mardi Gras can vary from very cold to very warm, almost hot.
                         Sometimes it will change from one extreme to the other during the same day. It’s a good idea to
@@ -232,19 +188,19 @@
                             href="https://www.mardigrasparadetickets.com/?utm_source=mgno&amp;utm_medium=2019&amp;utm_campaign=mgpt&amp;utm_content=shop"
                             target="_blank">New Orleans Parade Tickets.</a></div>
                 </div>
-                <div class="qu mb-3 text-warning">
+                <div class="qu mb-3 purple">
                     Do I need to buy Mardi Gras beads and merchandise before my visit?
                     <div class="an">Not unless you are going to be a rider on a float. If you plan to watch the parades
                         during Mardi Gras, you'll catch so much you won't be able to carry it all!</div>
                 </div>
-                <div class="qu mb-3 text-success">
+                <div class="qu mb-3 yellow">
                     What can I do to keep my family safe at parades?
                     <div class="an">Cameras are now up along most of the popular New Orleans parade routes and are
                         connected to the city's new real-time monitoring center. Check out our Mardi Gras Parade <a
                             href="Tips.html"> Tips & Recommendations</a> for tips to enjoy a safe and happy Carnival
                         experience.</div>
                 </div>
-                <div class="qu mb-3 text-secondary">
+                <div class="qu mb-3 black">
                     Why does Mardi Gras fall on different dates each year?
                     <div class="an">The date of Mardi Gras changes every year because it's connected to Easter, which
                         can fall on any Sunday between March 23 and April 25. Mardi Gras day always takes place 47 days
