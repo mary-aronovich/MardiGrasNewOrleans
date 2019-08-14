@@ -1,3 +1,15 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+.nav-link,
+.dropdown-item {
+    font-size: 1.1em;
+}
+
 .purple {
     color: #9453A6;
 }
@@ -21,11 +33,13 @@
 h1 {
     font-family: 'Henny Penny';
     font-size: 5em;
+    color: #0d0d0d
 }
 
 h2 {
     font-family: 'Pattaya';
     font-size: 2em;
+    color: #0d0d0d
 }
 
 .myNav,
@@ -35,10 +49,44 @@ h2 {
     display: block;
 }
 
-
+h3,
 p {
     font-family: 'Roboto';
     font-size: 20px;
+    color: #0d0d0d
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.carousel-caption h1 {
+    font-size: 500%;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 15px #f2f2f2;
+}
+
+.carousel-caption h2 {
+    font-size: 200%;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px #f2f2f2;
+    padding-bottom: 1rem;
+}
+
+.btn-outline-light {
+    font-family: 'Roboto';
+}
+
+.btn-outline-light:hover {
+    font-family: 'Roboto';
+    background-color: #f2f2f2;
 }
 
 .logo2019 {
@@ -70,4 +118,146 @@ form fieldset div.formfields {
 .an {
     font-family: 'Roboto';
     font-size: 0.8em;
+}
+
+.social a {
+    font-size: 3em;
+    padding: 3rem;
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: #00aced;
+}
+
+.fa-instagram {
+    color: #7729c1;
+}
+
+.fa-youtube {
+    color: #bb0000;
+}
+
+.fa-tripadvisor {
+    color: #156f54;
+}
+
+.fa-facebook-square:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-youtube:hover,
+.fa-tripadvisor:hover {
+    color: #0d0d0d;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding-top: 2rem;
+}
+
+hr.dark {
+    border-top: 1px solide #0d0d0d;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem
+}
+
+footer a {
+    color: #0d0d0d;
+}
+
+hr.dark-100 {
+    border-top: 1px solide #0d0d0d;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem
+}
+
+
+
+
+/* Media */
+@media (max-width:995px) {
+    .social a {
+        font-size: 4em;
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .carousel-caption {
+        top: 45%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 350%;
+    }
+
+    .carousel-caption h2 {
+        font-size: 140%;
+        font-weight: 400;
+        text-shadow: 1px 1px 5px #f2f2f2;
+        padding-bottom: .2rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: 95%;
+        padding: 8px 14px;
+    }
+
+    .display-4 {
+        font-size: 200%;
+    }
+
+    .social a {
+        font-size: 2.5em;
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width:576px) {
+    .carousel-caption {
+        top: 40%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 250%;
+    }
+
+    .carousel-caption h2 {
+        font-size: 110%;
+    }
+
+    .carousel-caption .btn {
+        font-size: 90%;
+        padding: 4px 8px;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .display-4 {
+        font-size: 160%;
+    }
+
+    .social a {
+        font-size: 2em;
+        padding: .7rem;
+    }
+}
+
+.carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+figure {
+    position: relative;
 }
